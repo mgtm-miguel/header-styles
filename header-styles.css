@@ -1,0 +1,112 @@
+:root {
+    --dark-blue: #00008B;
+}
+
+header.header {
+    position: fixed;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #0056b3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+body {
+    padding-top: 90px;
+}
+
+.header .navbar-nav .nav-link,
+.header .navbar-nav .nav-link:hover,
+.header .navbar-nav .nav-link:focus,
+.header .navbar-nav .nav-link:active,
+.header .navbar-nav .nav-item.active .nav-link,
+.header .navbar-nav .nav-item.current-menu-item .nav-link,
+.header .navbar-nav .nav-item.current-menu-parent .nav-link,
+.header .navbar-nav .nav-item.current-page-ancestor .nav-link {
+    color: #ffffff !important;
+    transition: none;
+    text-decoration: none;
+}
+
+.header .navbar-nav .nav-item.active .nav-link,
+.header .navbar-nav .nav-item.current-menu-item .nav-link,
+.header .navbar-nav .nav-item.current-menu-parent .nav-link,
+.header .navbar-nav .nav-item.current-page-ancestor .nav-link {
+    font-weight: bold;
+}
+
+.header .navbar-nav .nav-item:first-child .nav-link,
+.header .navbar-nav .nav-item:first-child.active .nav-link,
+.header .navbar-nav .nav-item:first-child.current-menu-item .nav-link {
+    color: #ffffff !important;
+}
+
+.top-bar {
+    background-color: #0056b3;
+    color: white;
+    padding: 5px 0;
+    font-size: 14px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1001;
+}
+
+.top-bar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.top-bar a i {
+    margin-right: 5px;
+}
+
+.top-bar a:hover {
+    color: #f8f9fa;
+    text-decoration: none;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .header .logo img {
+        max-height: 40px;
+    }
+    .header .navbar-nav .nav-link {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    .header .navbar-toggler {
+        margin-bottom: 0;
+    }
+    .contact-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contact-info a {
+        margin-bottom: 5px;
+    }
+}
+
+.logo-container {
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-image {
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
