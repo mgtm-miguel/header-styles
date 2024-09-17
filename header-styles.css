@@ -1,10 +1,6 @@
-:root {
-    --dark-blue: #00008B;
-}
-
 header.header {
     position: fixed;
-    top: 30px;
+    top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
@@ -14,7 +10,7 @@ header.header {
 }
 
 body {
-    padding-top: 90px;
+    padding-top: 60px;
 }
 
 .header .navbar-nav .nav-link,
@@ -43,41 +39,6 @@ body {
     color: #ffffff !important;
 }
 
-.top-bar {
-    background-color: #0056b3;
-    color: white;
-    padding: 5px 0;
-    font-size: 14px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1001;
-}
-
-.top-bar a {
-    color: white;
-    text-decoration: none;
-    margin-right: 15px;
-    display: inline-flex;
-    align-items: center;
-}
-
-.top-bar a i {
-    margin-right: 5px;
-}
-
-.top-bar a:hover {
-    color: #f8f9fa;
-    text-decoration: none;
-}
-
-.contact-info {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
 @media (max-width: 767px) {
     .header .logo img {
         max-height: 40px;
@@ -88,13 +49,6 @@ body {
     }
     .header .navbar-toggler {
         margin-bottom: 0;
-    }
-    .contact-info {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .contact-info a {
-        margin-bottom: 5px;
     }
 }
 
